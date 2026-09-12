@@ -567,6 +567,10 @@ $("#player").lunaradio({
 
 </div></div></div></div></section></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230213/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
 
+});
+
+        let deferredPrompt;
+
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
@@ -601,4 +605,17 @@ $("#player").lunaradio({
             document.getElementById('installPopup').style.display = 'block';
         }
     </script>
+    <footer style="display:grid;align-content:end">
+        <div style="background-color:#3d85c6;color:#fff;text-align:center;padding:5px">
+            ©<a href="http://wa.me/51992377712">Copyright 2026 - App Desarrollado con tecnologia Pwa.</a>
+        </div>
+        <script>
+            $(".mobile-nav-toggle").click(function () {
+                $("body").toggleClass("mobile-nav-active");
+                $(".mobile-nav-toggle i").toggleClass("fa-bars fa-times");
+            });
+        </script>
+    </footer>
+</body>
 
+</html>
